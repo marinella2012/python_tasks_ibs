@@ -32,6 +32,3 @@ class Cow(Animal):
 dog = Dog('Dog')
 cat = Cat('Cat')
 cow = Cow('Cow')
-print(dog.voice())
-print(cat.voice())
-print(cow.voice())
