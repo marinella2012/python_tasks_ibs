@@ -4,18 +4,18 @@
 # Если мы создали трех наследников в предыдущем задании, то наш метод
 # должен вывести на экран число 3.
 class Animal():
-    num_of_ex = 0
+    sum_of_ex = 0
 
     def __init__(self, name):
         self.name = name
-        Animal.num_of_ex += 1
+        Animal.sum_of_ex += 1
 
     def voice(self):
         return 'Voice!'
 
     @staticmethod
-    def print_num_of_ex():
-        return Animal.num_of_ex
+    def print_sum_of_ex():
+        return Animal.sum_of_ex
 
 
 class Cat(Animal):
@@ -37,4 +37,4 @@ dog = Dog('Dog')
 cat = Cat('Cat')
 cow = Cow('Cow')
 
-print(Animal.print_num_of_ex())
+print(Animal.print_sum_of_ex())
