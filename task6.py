@@ -11,8 +11,27 @@ class Animal():
         self.name = name
 
     def voice(self):
-        return ('Гав!')
+        return 'Voice!'
 
 
-class Car(Animal):
+class Cat(Animal):
+    def voice(self):
+        return self.name + ' says: Meow!'
 
+
+class Dog(Animal):
+    def voice(self):
+        return self.name + ' says: Woof!'
+
+
+class Cow(Animal):
+    def voice(self):
+        return self.name + ' says: Mooo!'
+
+
+dog = Dog('Dog')
+cat = Cat('Cat')
+cow = Cow('Cow')
+print(dog.voice())
+print(cat.voice())
+print(cow.voice())
