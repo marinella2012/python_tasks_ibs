@@ -2,3 +2,11 @@
 # и создать на его основе новый файл, где содержимое будет записано в обратном
 # порядке. В конце программы вывести на экран оба файла - старый в неизменном
 # виде и новый в обратном порядке.
+with open('123.txt') as f:
+    with open('321.txt', 'w') as f2:
+        for line in reversed(list(f)):
+            f2.write(line)
+with open('123.txt', 'r') as f:
+    print(f.read())
+with open('321.txt', 'r') as f2:
+    print(f2.read())

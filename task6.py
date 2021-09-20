@@ -6,3 +6,13 @@
 # реализацию метода voice().
 # 2. Создать по одному экземпляру всех наследников и вызвать для каждого
 # переопределенный метод voice().
+class Animal():
+    def __init__(self, name):
+        self.name = name
+
+    def voice(self):
+        return ('Гав!')
+
+
+class Car(Animal):
+
