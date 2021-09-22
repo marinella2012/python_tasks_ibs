@@ -127,5 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-chromedriver.exe
-selenium-server-standalone-3.141.59.jar
+
+*.exe
+*.jar
